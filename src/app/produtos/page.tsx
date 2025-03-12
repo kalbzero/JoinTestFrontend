@@ -7,6 +7,7 @@ type Produto = {
   nome_produto: string;
   valor_produto: number;
   id_categoria_produto: number;
+  nome_categoria: string;
 };
 
 export default function ProdutoPage() {
@@ -72,7 +73,7 @@ export default function ProdutoPage() {
             produtos.map((produto) => (
               <tr key={produto.id_produto} className="border-b hover:bg-gray-50">
                 <td className="px-6 py-4">{produto.nome_produto}</td>
-                <td className="px-6 py-4">{produto.id_categoria_produto}</td>
+                <td className="px-6 py-4">{produto.nome_categoria}</td>
                 <td className="px-6 py-4">{produto.valor_produto.toFixed(2)}</td>
                 <td className="px-6 py-4 text-right">
                   {/* Botões de Ação */}
