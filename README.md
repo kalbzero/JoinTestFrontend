@@ -2,18 +2,24 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Para rodar local, execute:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador de internet.
 
 ## Docker
 
-Create Docker
+Listar os containers
+- docker ps
+
+Criar container
 - docker build -t meu-frontend .
 
-Run container
+Rodar container
 - docker run -p 3000:3000 meu-frontend
+
+Deletar container
+- docker stop meu-frontend
